@@ -9,5 +9,9 @@ namespace ShopV2.Interfaces
     public interface IWriter
     {
         void Write(string input);
+
+        string Read();
     }
+
+
 }

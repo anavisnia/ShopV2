@@ -10,9 +10,16 @@ namespace ShopV2.Loggers
 {
     public class FileLogger : IWriter
     {
+        public string Read()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Write(string input)
         {
             File.WriteAllText("path", input);
         }
+
+
     }
 }

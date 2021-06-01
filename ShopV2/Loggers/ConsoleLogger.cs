@@ -13,5 +13,10 @@ namespace ShopV2.Loggers
         {
             Console.WriteLine(input);
         }
+
+        public string Read()
+        {
+            return Console.ReadLine();
+        }
     }
 }

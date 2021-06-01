@@ -10,6 +10,11 @@ namespace ShopV2.Loggers
 {
     public class MockLogger : IWriter
     {
+        public string Read()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Write(string input)
         {
             //Do nothing

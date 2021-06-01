@@ -12,7 +12,7 @@ namespace ShopV2
 
             var shop = new Shop(logger);
 
-            shop.Buy("Food");
+            shop.Buy();
         }
     }
 }

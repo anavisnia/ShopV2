@@ -1,4 +1,5 @@
 ﻿using ShopV2.Interfaces;
+using ShopV2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,15 +13,19 @@ namespace ShopV2
         //absrtakcija
         private IWriter _logger;
 
+        public List<Item> Items { get; set; }
+
         public Shop(IWriter logger)
         {
             _logger = logger;
+            Items = new List<Item>();
         }
 
-        public void Buy(string itemName)
+        public void Buy()
         {
             //Extra logic
             //Console.WriteLine($"{itemName} has been bought");
+            string itemName = _logger.Read();
             _logger.Write($"{itemName} has been bought");
         }
 
