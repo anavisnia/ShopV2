@@ -12,7 +12,7 @@ namespace ShopV2
 
             var shop = new Shop(logger);
 
-            shop.Buy();
+            shop.AddItem("Apple", 20);
         }
     }
 }
