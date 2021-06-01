@@ -10,6 +10,11 @@ namespace ShopV2.Loggers
 {
     public class FileLogger : IWriter
     {
+        public void Clear()
+        {
+            throw new NotImplementedException();
+        }
+
         public string Read()
         {
             throw new NotImplementedException();

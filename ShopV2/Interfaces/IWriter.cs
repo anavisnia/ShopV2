@@ -11,6 +11,8 @@ namespace ShopV2.Interfaces
         void Write(string input);
 
         string Read();
+
+        void Clear();
     }
 
 

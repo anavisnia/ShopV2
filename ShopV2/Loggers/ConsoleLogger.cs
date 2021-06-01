@@ -18,5 +18,10 @@ namespace ShopV2.Loggers
         {
             return Console.ReadLine();
         }
+
+        public void Clear()
+        {
+            Console.Clear();
+        }
     }
 }

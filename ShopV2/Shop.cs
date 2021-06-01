@@ -26,15 +26,14 @@ namespace ShopV2
         {
             _logger = logger;
             Items = new List<Item>();
+            AddItem("Cup", 20);
+            AddItem("Candy", 40);
+            AddItem("Book", 70);
+            _logger.Clear();
         }
 
         public void Start()
         {
-            AddItem("Cup", 20);
-            AddItem("Candy", 40);
-            AddItem("Book", 70);
-            Console.Clear();
-
             _logger.Write("===== Console Shop =====");
             do
             {
