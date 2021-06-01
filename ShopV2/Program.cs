@@ -12,10 +12,7 @@ namespace ShopV2
 
             var shop = new Shop(logger);
 
-            shop.AddItem("Apple", 20);
-            shop.AddItem("Pen", 60);
-            shop.AddItem("Book", 10);
-            shop.ListItems();
+            shop.Start();
         }
     }
 }
