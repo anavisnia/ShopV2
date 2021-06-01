@@ -42,6 +42,18 @@ namespace ShopV2
             _logger.Write($"Item added: {name}, quantity {quantity}");
         }
 
+        public void ListItems()
+        {
+            _logger.Write("List of items:");
+            foreach (var item in Items)
+            {
+                if (item.Quantity != 0)
+                {
+                    _logger.Write(item.ToDescriptionString());
+                }
+            }
+        }
+
         public void Buy()
         {
             string itemName;
