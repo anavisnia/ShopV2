@@ -1,9 +1,5 @@
 ﻿using ShopV2.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopV2.Loggers
 {
@@ -12,6 +8,15 @@ namespace ShopV2.Loggers
         public void Write(string input)
         {
             Console.WriteLine(input);
+        }
+
+        public void ListAllCommands()
+        {
+            Write("List of commands:");
+            Write("Write 'Add' to add products to the store:'Add Cup 80' and press enter");
+            Write("Write 'Buy' to buy products: 'Buy Cup 80' and press enter");
+            Write("Write 'List' to see all available products, their price and quantity: 'List' and press enter");
+            Write("Write 'Exit' and press enter to stop the program");
         }
 
         public string Read()

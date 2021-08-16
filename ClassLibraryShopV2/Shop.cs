@@ -4,8 +4,6 @@ using ShopV2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopV2
 {
@@ -37,11 +35,7 @@ namespace ShopV2
             _logger.Write("===== Console Shop =====");
             do
             {
-                _logger.Write("List of commands:");
-                _logger.Write("Write 'Add' to add products to the store:'Add Cup 80' and press enter");
-                _logger.Write("Write 'Buy' to buy products: 'Buy Cup 80' and press enter");
-                _logger.Write("Write 'List' to see all available products, their price and quantity: 'List' and press enter");
-                _logger.Write("Write 'Exit' and press enter to stop the program");
+                _logger.ListAllCommands();
                 userInput = _logger.Read().Trim();
 
                 List<string> userInputList = userInput.Trim().Split(' ').ToList();
